@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     id("com.google.gms.google-services")
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -69,5 +70,14 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.14.0"))
 
     implementation("com.google.firebase:firebase-analytics")
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    //Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
+    // Room
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
 }

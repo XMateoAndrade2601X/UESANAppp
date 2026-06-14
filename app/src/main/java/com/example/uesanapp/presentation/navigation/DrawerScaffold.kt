@@ -24,6 +24,7 @@ import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
+import com.example.uesanapp.data.remote.FirebaseAuthManager
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -55,12 +56,21 @@ fun DrawerScaffold(navController: NavController,
                         navController.navigate("permissions")
                     }
                 )
-                //Permisions
+                //Favorites
                 NavigationDrawerItem(
-                    label = { Text("Favorites") },
+                    label = { Text("Paises (Favs)") },
                     selected = false,
                     onClick = {
-                        navController.navigate("favorites")
+                        navController.navigate("countries")
+                    }
+                )
+                //Logout
+                NavigationDrawerItem(
+                    label = { Text("Logout") },
+                    selected = false,
+                    onClick = {
+                        FirebaseAuthManager.logout()
+                        navController.navigate("login")
                     }
                 )
             }

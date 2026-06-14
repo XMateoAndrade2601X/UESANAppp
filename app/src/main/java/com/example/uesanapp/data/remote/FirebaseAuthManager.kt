@@ -43,6 +43,10 @@ object FirebaseAuthManager {
             Result.failure(e)
         }
     }
-
+     fun logout(){
+        auth.signOut()
+    }
 
 }
+
+

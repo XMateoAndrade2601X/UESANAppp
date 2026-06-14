@@ -27,5 +27,10 @@ fun AppNavGraph(){
                 GalleryPermissionsScreen()
             }
         }
+        composable("countries"){
+            DrawerScaffold(navController) {
+                com.example.uesanapp.presentation.countries.CountryListScreen()
+            }
+        }
     }
 }

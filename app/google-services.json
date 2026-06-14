@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "355570738300",
-    "project_id": "chang-uesan-202601",
-    "storage_bucket": "chang-uesan-202601.firebasestorage.app"
+    "project_number": "663110802667",
+    "project_id": "andrade-uesan-202601",
+    "storage_bucket": "andrade-uesan-202601.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:355570738300:android:323719db95176f84c655f9",
+        "mobilesdk_app_id": "1:663110802667:android:2def41e09752783344f2ae",
         "android_client_info": {
           "package_name": "com.example.uesanapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAqC-HpCTpr5XDOiSFLJmcYC5PLinbHwgM"
+          "current_key": "AIzaSyDVNF8AvILr6cEJPhrG2xHg1ufUyUaCtwY"
         }
       ],
       "services": {
